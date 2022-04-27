@@ -13,7 +13,7 @@ export default defineComponent({
     }
   },
   setup(props){
-    const setColor = computed(()=>props.color);
+    const setColor = computed(()=> 'color:'+ props.color);
     const setSize = computed(()=>props.size);
     
     return {
