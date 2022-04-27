@@ -1,0 +1,56 @@
+{
+  "name": "@astel/icons",
+  "version": "0.0.0",
+  "description": "Icons for Avid UI",
+  "keywords": [
+    "icons",
+    "vue 3",
+    "avid",
+    "avid ui"
+  ],
+  "homepage": "https://github.com/astel-org/icons#readme",
+  "bugs": {
+    "url": "https://github.com/astel-org/icons/issues"
+  },
+  "license": "MIT",
+  "author": "",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/lib/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astel-org/icons.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "esno src/index.ts",
+    "prepublishOnly": "yarn build",
+    "release": "np",
+    "lint": "eslint . --ext .js,.ts,.json,.json5,.vue,.md --fix"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@astel/cli": "^0.0.5",
+    "@kolhe/eslint-config": "^1.1.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/shelljs": "^0.8.11",
+    "@types/svgo": "^2.6.3",
+    "eslint": "^8.14.0",
+    "esno": "^0.14.1",
+    "fs-extra": "^10.1.0",
+    "lucide-static": "^0.35.0",
+    "np": "^7.6.1",
+    "prettier": "^2.6.2",
+    "shelljs": "^0.8.5",
+    "svgo": "^2.8.0",
+    "typescript": "^4.6.3"
+  }
+}
