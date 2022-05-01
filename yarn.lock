@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.5.1.tgz#7eb6764878adb715daff20019e5a15fd63d93342"
   integrity sha512-8Afo0+xvYe1K8Wm4xHTymfTkpzy36aaqDvhXIayUwl+mecMG9Xzl3XjXa6swG6Bk8FBeQ646RyvmsYt6+2Be9g==
 
-"@astel/cli@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@astel/cli/-/cli-0.0.5.tgz#aa0c8a59cd92746299ad1510b64ded1778d273ca"
-  integrity sha512-YPoU9UsU6Hx+KLKlCKmG9hE8kHBa5LXiUJtQnvS29RvP+e4eujZdXNJUULzXwuf1FCTbEAdlSJ+K4OEd5RIpcQ==
+"@astel/cli@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@astel/cli/-/cli-0.0.7.tgz#e61411ca5f8c51b5c16763ce60bb6f53eae837d8"
+  integrity sha512-subLzGAWv63dMR8YEyz1yQ1f+XdBWrlavYbS8ccCEm6gIndFNu3FW0TmF4giNYoIa9CZ2QtBt+xgeUjMsC+9fw==
   dependencies:
     "@vitejs/plugin-vue" "^2.3.1"
     clean-css "^5.3.0"
@@ -133,10 +133,10 @@
     eslint-define-config "^1.3.0"
     eslint-plugin-vue "^8.5.0"
 
-"@kolhe/eslint-config@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@kolhe/eslint-config/-/eslint-config-1.1.2.tgz#d4932af4467e224bb0c4b8a56c70d7a56f5c038c"
-  integrity sha512-LUUVMM8ARN1joBP0kmv0XnodFyTtmZ8U5LWG9QMXezQl442lbLViXd07+qk7LXdtarySKZ1MhIT8tZe1aqs+HQ==
+"@kolhe/eslint-config@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@kolhe/eslint-config/-/eslint-config-1.1.3.tgz#5b77a18fb67ca4eb2ba4eaf1b29426f23b4a2aab"
+  integrity sha512-fVEhfMPPlwTNLittfq6UkNfE5eXivgMMncPZe48IBJSZYSOaFZatGVBEGj9FF5z6fXjtRv0OLaOwypE7EGqWKw==
   dependencies:
     "@kolhe/eslint-config-prettier" latest
     "@kolhe/eslint-config-vue" latest
@@ -4659,10 +4659,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.6.3:
-  version "4.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
-  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
+typescript@^4.6.4:
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
+  integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
 
 unbox-primitive@^1.0.1:
   version "1.0.2"
