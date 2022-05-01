@@ -5,7 +5,7 @@ import icons from 'lucide-static'
 import { mkdirpSync, removeSync, writeFileSync } from 'fs-extra'
 import { optimize } from 'svgo'
 import { iconTemplate, indexTemplate } from './template'
-import { formatComponentName, replaceStyle } from './utils'
+import { formatComponentName } from './utils'
 import type { OptimizedSvg } from 'svgo'
 
 const buildIcons = async () => {
@@ -22,7 +22,18 @@ const buildIcons = async () => {
       plugins: [
         {
           name: 'removeAttrs',
-          params: { attrs: '(height|width|color)' },
+          params: { attrs: '(height|width|color|stroke-width)' },
+        },
+        {
+          name: 'addAttributesToSVGElement',
+          params: {
+            attributes: [
+              'stroke-width="1.5"',
+              ':height="setSize"',
+              ':width="setSize"',
+              ':style="setColor"',
+            ],
+          },
         },
         'removeXMLNS',
       ],
@@ -32,7 +43,7 @@ const buildIcons = async () => {
 
     writeFileSync(
       join(baseDir, formatComponentName(iconName), `${iconName}.vue`),
-      iconTemplate(iconName, replaceStyle(svg.data))
+      iconTemplate(iconName, svg.data)
     )
 
     writeFileSync(
